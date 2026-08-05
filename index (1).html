@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Amara</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#ffd6e7;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.card{background:#fff;max-width:700px;margin:20px;padding:24px;border-radius:20px;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,.15)}
+img{width:260px;max-width:100%;border-radius:16px}
+button{background:#ff4f8b;color:#fff;border:none;padding:12px 22px;border-radius:30px;font-size:16px;cursor:pointer}
+#isi{display:none}
+p{text-align:left;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="card">
+<div id="awal">
+<h1>🎁 Happy Birthday Amara</h1>
+<p>Klik tombol di bawah untuk membuka ucapan.</p>
+<button onclick="buka()">Buka Ucapan ❤️</button>
+</div>
+<div id="isi">
+<h2>Selamat Ulang Tahun ke-18, Amara 🥳🤍</h2>
+<img src="images/foto1.jpg" alt="Amara">
+<p>Selamat ulang tahun ke delapan belas sayaangg 🥳🤍<br><br>
+Semoga di hari ulang tahunmu yang ke-18 ini kamu selalu semangat, sehat, dimudahkan segala urusan, dilancarkan rezekinya oleh Allah SWT, dan semua impianmu bisa terwujud. Aamiin 🤲🏻🤍<br><br>
+Semoga kamu juga menjadi pribadi yang semakin baik, lebih disiplin sholat, rajin olahraga, dan terus belajar hal-hal positif.<br><br>
+Terakhir, semoga kita selalu bersama dan dikuatkan sampai kita halal nanti. Aamiin 🤍
+</p>
+<audio id="musik" controls autoplay>
+<source src="blue.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+<script>
+function buka(){
+document.getElementById('awal').style.display='none';
+document.getElementById('isi').style.display='block';
+const a=document.getElementById('musik');
+a.play().catch(()=>{});
+}
+</script>
+</body>
+</html>
